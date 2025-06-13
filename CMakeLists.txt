@@ -7,6 +7,5 @@ set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded")
 add_compile_options(/Ox /Os)
 
 project(rcedit)
-
 add_executable(rcedit src/main.cc src/rescle.cc src/rcedit.rc)
-target_link_libraries(rcedit version.lib)
+target_link_libraries(rcedit version.lib imagehlp)
